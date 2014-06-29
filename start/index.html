@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <script src="/components/platform/platform.js"></script>
   <link rel="import" href="/components/font-roboto/roboto.html">
+  <link rel="import" href="/components/core-header-panel/core-header-panel.html">
+  <link rel="import" href="/components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="/components/paper-tabs/paper-tabs.html">
   <style>
   html,body {
     height: 100%;
@@ -45,7 +48,22 @@
 </head>
 
 <body unresolved touch-action="auto">
+  <core-header-panel>
+    <core-toolbar>
+      <paper-tabs valueattr="name" selected="all">
+        <paper-tab name="all">ALL</paper-tab>
+        <paper-tab name="favorites">FAVOURITES</paper-tab>
+      </paper-tabs>
+    </core-toolbar>
+  </core-header-panel>
 
+  <script>
+    var tabs = document.querySelector('paper-tabs');
+
+    tabs.addEventListener('core-select', function() {
+      console.log("selected: ", tabs.selected);
+    });
+  </script>
 </body>
 
 </html>
