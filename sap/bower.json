@@ -1,0 +1,27 @@
+{
+  "name": "sap",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    "Eric Bidelman http://ericbidelman.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.3",
+    "core-pages": "Polymer/core-pages#~0.3.3",
+    "core-toolbar": "Polymer/core-toolbar#~0.3.3",
+    "core-scaffold": "Polymer/core-scaffold#~0.3.3",
+    "paper-icon-button": "Polymer/paper-icon-button#~0.3.3",
+    "core-icon": "Polymer/core-icon#~0.3.3",
+    "core-item": "Polymer/core-item#~0.3.3",
+    "core-menu": "Polymer/core-menu#~0.3.3",
+    "flatiron-director": "PolymerLabs/flatiron-director#~0.3.0"
+  }
+}
